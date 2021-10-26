@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>seek coding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="navbar">
+        <div>
+        <a href="website.html">seek coding</a>
+    </div>
+    <nav>
+        <ul id="menuitems">
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>About us</a></li>
+            <li><a href='#'>Services</a></li>
+            <li><a href='#'>Contact</a></li>
+            <li><button class='loginbtn' onclick="document.getElementById('Login-form').style.display='block'"
+                    style="width:auto;">Login</button>
+            </li>
+        </ul>
+    </nav>
+    </div>
+    <div id='login-form' class='login-page'>
+        <div class="form-box">
+            <div class='button-box'>
+                <div id='btn'></div>
+                <button type='button' onclick='login()' class='toggle-btn'>log In</button>
+                <button type='button' onclick='register()' class='toggle-btn'>register</button>
+            </div>
+            <form id='login' class='input-group-login'>
+                <input type='text' class='input-filed' placeholder='Email Id' required>
+                <input type='password' class='input-filed' placeholder='enter password' required>
+                <input type='checkbox' class='check-box'><span>remember password</span>
+                <button type='submit' class='submit-btn'>Log In</button>
+            </form>
+            <form id='register' class='input-group-register'>
+                <input type='text' class='input-filed' placeholder='First Name' requred>
+                <input type='text' class='input-filed' placeholder='Last Name' requred>
+                <input type='email' class='input-filed' placeholder='Email Id' requred>
+                <input type='password' class='input-filed' placeholder='enter password' requred>
+                <input type='password' class='input-filed' placeholder='confirm password' requred>
+                <input type='checkbox' class='check-box'><span>I agree to the terms and conditions</span>
+                <button type='submit' class='submit-btn'>register</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    <script>
+        var X = document.getElementsById('Login');
+        var Y = document.getElementsById('register');
+        var Z = document.getElementsById('btn');
+        function register() 
+        {
+            X.style.left = '-400px';
+            Y.style.left = '50px';
+            Z.style.left = '110px';
+        }
+        function login() 
+        {
+            X.style.left = '50px';
+            Y.style.left = '450px';
+            Z.style.left = '0px';
+        }
+    </script>
+    <script>
+        var modal = document.getElementsById('Login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

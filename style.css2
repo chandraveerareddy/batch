@@ -1,0 +1,56 @@
+body{
+    background-color: blue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+div {
+    background-color: yellow;
+    border: darkred 3px solid;
+    float: left;
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+}
+h1{
+    color: red;
+}
+.bbgreen{
+    color: pink;
+}
+.bbblack{
+    color: green
+
+}
+nav {
+    color: white;
+}
+ul {width:100%;}
+ul li {
+    list-style:none;
+    float: left;
+    margin: 15px;
+    width: 20%;
+}
+ul li a {
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+ul li a:hover{
+    background: yellowgreen;
+    padding: 5px;
+}
+ul li a.active{
+    background: yellowgreen;
+    padding: 5px;
+}
+.container {
+    width:100%;
+    color:white;
+    margin:auto;
+}
+.container img {
+    width:100% ;
+    height: 250px;
+    border: #pink;
+}
+
